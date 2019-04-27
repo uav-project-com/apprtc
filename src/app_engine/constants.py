@@ -20,46 +20,43 @@ LOOPBACK_CLIENT_ID = 'LOOPBACK_CLIENT_ID'
 
 # Turn/Stun server override. This allows AppRTC to connect to turn servers
 # directly rather than retrieving them from an ICE server provider.
-ICE_SERVER_OVERRIDE = None
+#ICE_SERVER_OVERRIDE = None
 # Enable by uncomment below and comment out above, then specify turn and stun
-# ICE_SERVER_OVERRIDE  = [
-#   {
-#     "urls": [
-#       "turn:hostname/IpToTurnServer:19305?transport=udp",
-#       "turn:hostname/IpToTurnServer:19305?transport=tcp"
-#     ],
-#     "username": "TurnServerUsername",
-#     "credential": "TurnServerCredentials"
-#   },
-#   {
-#     "urls": [
-#       "stun:hostname/IpToStunServer:19302"
-#     ]
-#   }
-# ]
+ICE_SERVER_OVERRIDE = [
+  {
+    "urls": "turn:103.101.163.159:3478?transport=udp",
+    "username": "nobjta_9x_tq",
+    "credential": "canhthong"
+  },
+  {
+    "urls": "turn:103.101.163.159:3478?transport=tcp",
+    "username": "nobjta_9x_tq",
+    "credential": "canhthong"
+  }
+]
 
-ICE_SERVER_BASE_URL = 'https://networktraversal.googleapis.com'
-ICE_SERVER_URL_TEMPLATE = '%s/v1alpha/iceconfig?key=%s'
-ICE_SERVER_API_KEY = os.environ.get('ICE_SERVER_API_KEY')
+ICE_SERVER_BASE_URL = ''
+ICE_SERVER_URL_TEMPLATE = ''
+ICE_SERVER_API_KEY = os.environ.get('')
 
 # Dictionary keys in the collider instance info constant.
-WSS_INSTANCE_HOST_KEY = 'host_port_pair'
-WSS_INSTANCE_NAME_KEY = 'vm_name'
-WSS_INSTANCE_ZONE_KEY = 'zone'
+WSS_INSTANCE_HOST_KEY = 'admasterlife.com:8443'
+WSS_INSTANCE_NAME_KEY = 'wsserver-std'
+WSS_INSTANCE_ZONE_KEY = 'us-central1-a'
 WSS_INSTANCES = [{
-    WSS_INSTANCE_HOST_KEY: 'apprtc-ws.webrtc.org:443',
-    WSS_INSTANCE_NAME_KEY: 'wsserver-std',
-    WSS_INSTANCE_ZONE_KEY: 'us-central1-a'
+    WSS_INSTANCE_HOST_KEY: 'admasterlife.com:8443',
+    WSS_INSTANCE_NAME_KEY: 'collinder-2',
+    WSS_INSTANCE_ZONE_KEY: 'vn-nhanhoa-02'
 }, {
-    WSS_INSTANCE_HOST_KEY: 'apprtc-ws-2.webrtc.org:443',
-    WSS_INSTANCE_NAME_KEY: 'wsserver-std-2',
-    WSS_INSTANCE_ZONE_KEY: 'us-central1-f'
+    WSS_INSTANCE_HOST_KEY: 'admasterlife.com:8443',
+    WSS_INSTANCE_NAME_KEY: 'collinder-1',
+    WSS_INSTANCE_ZONE_KEY: 'vn-nhanhoa-01'
 }]
 
 WSS_HOST_PORT_PAIRS = [ins[WSS_INSTANCE_HOST_KEY] for ins in WSS_INSTANCES]
 
 # memcache key for the active collider host.
-WSS_HOST_ACTIVE_HOST_KEY = 'wss_host_active_host'
+WSS_HOST_ACTIVE_HOST_KEY = 'admasterlife.com:8443'
 
 # Dictionary keys in the collider probing result.
 WSS_HOST_IS_UP_KEY = 'is_up'
