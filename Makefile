@@ -1,0 +1,2 @@
+compile:
+	grunt build
