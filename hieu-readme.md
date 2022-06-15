@@ -1,8 +1,8 @@
 # Aprtc python following github of google
 1. branch code information
-    - master: nhánh code cũ, đang chạy cho version aar và chrome index: 1.0.27771
-    - main: nhánh update liên tục từ github google `https://github.com/webrtc/apprtc`
-    - main-dev: nhánh main nhưng có modify code sao cho vẫn merge được từ github google master => main => main-dev
+    - master_old: nhánh code cũ, đang chạy cho version aar và chrome index: 1.0.27771
+    - master: nhánh update liên tục từ github google `https://github.com/webrtc/apprtc`
+    - main: nhánh main nhưng có modify code sao cho vẫn merge được từ github google `master`
 2. install requirements
 ```bash
 npm -v
