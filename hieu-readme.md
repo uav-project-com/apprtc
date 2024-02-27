@@ -25,11 +25,13 @@ pip install -r requirements.txt
 ## install grunt
 sudo apt install node-grunt-cli
 
+### https://viblo.asia/p/tim-hieu-ve-grunt-6BAMYkkBvnjz
 #### BUILD ######
 grunt build
 
 # output is: `out/app_engine`
 ```
+
 3. fix bug build
 - grunt build error:
     + https://github.com/gruntjs/grunt/issues/1737#issuecomment-1050182219
@@ -40,6 +42,7 @@ grunt build
     ```
     ran `sudo npm i`
 in grunt-cli installed directory (/usr/share/nodejs/grunt-cli)
+
 
 4. Deploy
 - Copy `out/app_engine` into:

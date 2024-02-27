@@ -13,7 +13,7 @@
   },
   "devDependencies": {
     "eslint-config-webrtc": ">=1.0.0",
-    "grunt": "^1.5.3",
+    "grunt": "^1.6.1",
     "grunt-cli": "^1.4.3",
     "grunt-contrib-compress": "^1.6.0",
     "grunt-contrib-csslint": "^2.0.0",

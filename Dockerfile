@@ -1,3 +1,4 @@
+#### DOCKER FILE FOR HIEU: find at: 0.admasterlife-webrtc-final-1.2021/docker-openssh-server/apprtc-image/webrtc/Dockerfile
 #######DEMO APP, DO NOT USE THIS FOR ANYTHING BUT TESTING PURPOSES, ITS NOT MEANT FOR PRODUCTION######
 
 FROM golang:1.17.5-alpine3.15
