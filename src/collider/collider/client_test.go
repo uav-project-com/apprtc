@@ -6,7 +6,7 @@
 package collider
 
 import (
-	"collidertest"
+	"collider/collidertest"
 	"testing"
 )
 
