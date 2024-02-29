@@ -11,15 +11,26 @@ A websocket-based signaling server in Go.
         git clone https://github.com/webrtc/apprtc.git
 
 3. Make sure to set the $GOPATH according to the Go instructions in step 1
-
+> mkdir $HOME/goWorkspace/
   E.g. `export GOPATH=$HOME/goWorkspace/`
   `mkdir $GOPATH/src`
 
-4. Link the collider directories into `$GOPATH/src`
+4. Link the collider directories into `$GOPATH/src
+> go version
+go version go1.11.2 linux/amd64
+> go env
+```bash
 
-        ln -s `pwd`/apprtc/src/collider/collider $GOPATH/src
-        ln -s `pwd`/apprtc/src/collider/collidermain $GOPATH/src
-        ln -s `pwd`/apprtc/src/collider/collidertest $GOPATH/src
+```
+- old lib:
+> https://github.com/golang/go/tree/master/src/crypto/tls
+
+```bash 
+cd apprtc
+ln -s `pwd`/src/collider/collider $GOPATH/src
+ln -s `pwd`/src/collider/collidermain $GOPATH/src
+ln -s `pwd`/src/collider/collidertest $GOPATH/src
+```
 
 5. Install dependencies
 
