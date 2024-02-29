@@ -375,7 +375,8 @@ def add_client_to_room(request, room_id, client_id, is_loopback):
       room = memcache_client.gets(key)
 
     occupancy = room.get_occupancy()
-    if occupancy >= 2:
+    logging.warning('AAAAAAAAAAAAAAAAA ROOM occupancy: ' + str(occupancy))
+    if occupancy >= 20:
       error = constants.RESPONSE_ROOM_FULL
       break
     if room.has_client(client_id):
